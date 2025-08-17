@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Button Page</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Fullscreen black background container */
+    body, html {
+      height: 100%;
+      width: 100%;
+      background-color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* The red button style */
+    button#klikDisini {
+      background-color: #e31b1b;
+      color: white;
+      padding: 16px 48px;
+      font-size: 1.25rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.25s ease;
+      user-select: none;
+    }
+
+    button#klikDisini:hover,
+    button#klikDisini:focus {
+      background-color: #bf1717;
+      outline: none;
+      box-shadow: 0 0 10px 2px rgba(227,27,27,0.7);
+    }
+
+    button#klikDisini:active {
+      background-color: #9f1212;
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+    <a href="index2.html">
+        <button aria-label="Tombol Klik Disini">Klik disini</button>
+      </a>      
+</body>
+</html>
+

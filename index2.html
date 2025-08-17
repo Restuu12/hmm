@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Happy Birthday 26th</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+    background-color: #0f111a;
+    overflow: hidden;
+    position: relative; /* Added for positioning dots */
+  }
+  .neon-glow {
+    text-shadow:
+      0 0 5px #84ffb9,
+      0 0 10px #74faa5,
+      0 0 20px #64b885,
+      0 0 40px #46a269;
+  }
+  .neon-glow-cake {
+    filter: drop-shadow(0 0 2px #a9f6d9) drop-shadow(0 0 8px #82ffbc);
+    animation: floatUpDown 4s ease-in-out infinite;
+  }
+  /* Balloon colors */
+  .balloon-1 {
+    stroke:#41b3a3;
+    fill:none;
+  }
+  .balloon-2 {
+    stroke:#8284ff;
+    fill:none;
+  }
+  .balloon-3 {
+    stroke:#ff5783;
+    fill:none;
+  }
+  .balloon-4 {
+    stroke:#feda75;
+    fill:none;
+  }
+  /* Balloon animation */
+  .balloon {
+    animation: floatUpDown 4s ease-in-out infinite;
+  }
+  .balloon:nth-child(1) { animation-delay: 0s; }
+  .balloon:nth-child(2) { animation-delay: 0.7s; }
+  .balloon:nth-child(3) { animation-delay: 1.4s; }
+  .balloon:nth-child(4) { animation-delay: 2.1s; }
+
+  @keyframes floatUpDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  .text-shadow-small {
+    text-shadow:
+      0 0 2px rgba(255, 255, 255, 0.6);
+  }
+
+  /* New animations for text and cake */
+  .float-animation {
+    animation: floatUpDown 4s ease-in-out infinite;
+  }
+  .float-animation:nth-child(1) { animation-delay: 0.2s; }
+  .float-animation:nth-child(2) { animation-delay: 0.4s; }
+  .float-animation:nth-child(3) { animation-delay: 0.6s; }
+  .float-animation:nth-child(4) { animation-delay: 0.8s; }
+
+  /* Dots animation */
+  .dot {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: moveDots 5s linear infinite;
+  }
+
+  @keyframes moveDots {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+
+<!-- Dots -->
+<div class="dot" style="width: 10px; height: 10px; top: 20%; left: 10%; animation-delay: 0s;"></div>
+<div class="dot" style="width: 15px; height: 15px; top: 30%; left: 50%; animation-delay: 1s;"></div>
+<div class="dot" style="width: 8px; height: 8px; top: 50%; left: 70%; animation-delay: 2s;"></div>
+<div class="dot" style="width: 12px; height: 12px; top: 70%; left: 20%; animation-delay: 3s;"></div>
+<div class="dot" style="width: 6px; height: 6px; top: 40%; left: 80%; animation-delay: 4s;"></div>
+
+<div class="flex flex-col items-center justify-center min-h-screen px-6 text-center text-white select-none">
+  <p class="mb-4 text-lime-400 font-semibold text-sm neon-glow text-shadow-small float-animation">Maaf Telat 😭😭</p>
+
+  <!-- Birthday Cake Icon with glowing candles -->
+  <svg class="mx-auto mb-6 neon-glow-cake float-animation" width="120" height="80" viewBox="0 0 64 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Cake with four candles burning">
+    <rect x="2" y="20" width="60" height="20" rx="6" stroke="#84FFB9" stroke-width="2" fill="none"/>
+    <rect x="10" y="12" width="7" height="8" rx="1.5" class="neon-glow" fill="#84FFB9"/>
+    <rect x="21" y="12" width="7" height="8" rx="1.5" fill="#a9f6d9" />
+    <rect x="32" y="12" width="7" height="8" rx="1.5" class="neon-glow" fill="#74FAA5"/>
+    <rect x="43" y="12" width="7" height="8" rx="1.5" fill="#84FFB9" />
+    <path d="M10 12v-6M24 12v-6M36 12v-6M48 12v-6" stroke="#74FAA5" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="13.5" cy="4" r="3.5" fill="#84FFB9" />
+    <circle cx="25.5" cy="4" r="3.5" fill="#74FAA5" />
+    <circle cx="37.5" cy="4" r="3.5" fill="#a9f6d9" />
+    <circle cx="49.5" cy="4" r="3.5" fill="#82ffbc" />
+  </svg>
+
+  <h1 class="font-extralight text-6xl text-white drop-shadow-lg float-animation">🍰🍰</h1>
+
+  <h2 class="text-7xl font-extrabold text-lime-400 drop-shadow-lg select-text float-animation">16thn</h2>
+
+  <h3 class="text-4xl font-bold mt-2 drop-shadow-lg float-animation">Happy Birthday Syaaa!!🥳🥳🥳</h3>
+
+  <h3 class="text-4xl font-bold mt-2 drop-shadow-lg float-animation">Maaf Cringe 😂😂</h3>
+
+  <!-- Balloons -->
+  <div class="mt-12 flex justify-center gap-14 max-w-md w-full">
+    <svg class="balloon balloon-1" width="48" height="72" viewBox="0 0 48 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Blue neon balloon">
+      <ellipse cx="24" cy="30" rx="20" ry="28" class="balloon-1" stroke-width="2"/>
+      <line x1="24" y1="58" x2="24" y2="72" stroke="#41b3a3" stroke-width="2" />
+      <line x1="18" y1="65" x2="30" y2="65" stroke="#41b3a3" stroke-width="2" />
+    </svg>
+
+    <svg class="balloon balloon-2" width="48" height="72" viewBox="0 0 48 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Purple neon balloon">
+      <ellipse cx="24" cy="30" rx="20" ry="28" class="balloon-2" stroke-width="2"/>
+      <line x1="24" y1="58" x2="24" y2="72" stroke="#8284ff" stroke-width="2" />
+      <line x1="18" y1="65" x2="30" y2="65" stroke="#8284ff" stroke-width="2" />
+    </svg>
+
+    <svg class="balloon balloon-3" width="48" height="72" viewBox="0 0 48 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Pink neon balloon">
+      <ellipse cx="24" cy="30" rx="20" ry="28" class="balloon-3" stroke-width="2"/>
+      <line x1="24" y1="58" x2="24" y2="72" stroke="#ff5783" stroke-width="2" />
+      <line x1="18" y1="65" x2="30" y2="65" stroke="#ff5783" stroke-width="2" />
+    </svg>
+
+    <svg class="balloon balloon-4" width="48" height="72" viewBox="0 0 48 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Yellow neon balloon">
+      <ellipse cx="24" cy="30" rx="20" ry="28" class="balloon-4" stroke-width="2"/>
+      <line x1="24" y1="58" x2="24" y2="72" stroke="#feda75" stroke-width="2" />
+      <line x1="18" y1="65" x2="30" y2="65" stroke="#feda75" stroke-width="2" />
+    </svg>
+  </div>
+
+</div>
+
+</body>
+</html>
